@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages(with_categories = True) %}
+    {% if messages %}
+        {% for cat,msg in messages %}
+            {% if cat == 'create-success' %}
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                {{ msg }}
+                </div>
+            </div>
+            {% elif cat == 'auth-fail' %}
+            <div class="alert alert-success" role="alert">
+            {{ msg }}
+            </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<h1>Sign in</h1>  
+{% include 'form.html' %}
+{% endblock content %}
+
+
+

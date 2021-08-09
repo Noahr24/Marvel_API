@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% with messages = get_flashed_messages(with_categories = True) %}
+    {% if messages %}
+        {% for cat,msg in messages %}
+            {% if cat == 'create-success' %}
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+                <div>
+                {{ msg }}
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+
+<h1>Get ready to join the Greatness of all of the great Marvel Heroes!</h1>
+    <!-- Header section start -->
+
+    <header class="row">
+        <div class="col-12 col-md-6" id="header-text">
+            <h2>Learn about all of your Favorite Marvel Heroes.</h2>
+            <h5>Make your dream team of your favorite heroes</h5>
+            <div>
+                <button class="btn btn-primary">Click this button kid</button>
+                <button class="btn btn-primary">Click it, its blue</button>
+            </div>
+        </div>
+        <!-- Header Image Here -->
+        <div class="col-12 col-md-6">
+            <img class="header-image" src="../../static/images/ironman1.jpeg">
+        </div>
+    </header>
+
+    <!-- Header section end -->
+
+    <!-- Start of Middle Section -->
+
+    <section class="row">
+        <div class="col-12" id="middle-text">
+            <h2>Pick from your favorite superhero weapons!</h2>
+            <p>You too can harness the power of STORMBREAKER (for 12 small payments of $99.99, Don't worry, if your parents love you, they will pay for it)</p>
+        </div>
+    </section>
+
+    <!-- End of middle section -->
+
+    <!-- Start of Features section -->
+    <section class="row" id="features-section">
+        <div class="col-md-4 col-offset-3">
+            <h4>Your favorite Heroes!</h4>
+            <p>
+                Remember kids, In the great words of Jimmy V "Dont give up, dont ever give up. You don't want to end up like Fat Thor".
+            </p>
+            <img src="../../static/images/fat-thor.jpeg" alt="fat-thor" id="api-image">
+        </div>
+    </section>
+    <section>
+        <div class="col-12 col-md-4">
+            <h4>We even have the DC Heroes!</h4>
+            <p>
+            Jk, DC sucks..... 
+            </p>
+            <img src="../../static/images/Wonder.jpeg" alt="GraphQL Image" id="graphql-image">
+            <p>That Joker movie was pretty solid though. And I heard Suicide Squad 2 was a banger. Besides that, the rest belong in the ...(look below)</p>
+            <img src="../../static/images/trash.jpeg" alt="">
+        </div>
+        <div class="col-12 col-md-4">
+            <h4>Here is a cool Marvel Picture</h4>
+            <img src="../../static/images/thor.png" alt="Database Image" id="database-image">
+        </div>
+    </section>
+    <!-- End of features -->
+
+    <!-- Start of Community -->
+    <section class="row">
+        <div class="col-12" id="drone-image">
+        </div>
+        <div class="col-12 col-md-6">
+            <h4>Join our Community</h4>
+            <p>
+                Talk with other nerds like you from around the world! You can all argue about
+                why Hulk would be Thor in a fight, and cry about why that cosplay Black Widow is hanging
+                out with that Chad dude instead of you. (Thor can access the bifrost and just shoot it through Hulk tho, 
+                so I think Thor wins. Even all sad and depressed and stuff)
+            </p>
+            <img src="../../static/images/Avengers.jpeg" alt="">
+            <div>
+                <button class="btn btn-primary">Did you click the button earlier?</button>
+                <button class="btn btn-primary">Please click it kid, I gotta make a living</button>
+            </div>
+        </div>
+    </section>
+    <!-- End of Community -->
+
+    <!-- Start of footer -->
+    <footer class="row" id="footer">
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <img src="../../static/images/A.jpeg" alt="CD Logo" id="footer-logo">
+            </div>
+        </div>
+
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Phase 1</h4>
+                <p>IronMan</p>
+                <p>The Incredible Hulk</p>
+                <p>dont want the Hulk movie</p>
+                <p>It's really bad</p>
+                <p>Avengers</p>
+            </div>
+        </div>
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Phase 2</h4>
+                <p>Ironman 3</p>
+                <p>Thor 2 sucks</p>
+                <p>Avengers 2 sucks</p>
+                <p>Antman is Ok</p>
+                <p>Phase 3 is better</p>
+            </div>
+        </div>
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Phase 3</h4>
+                <p>Dr. Strange (banger)</p>
+                <p>Spiderman (Banger)</p>
+                <p>Infinity War (certified banger)</p>
+                <p>Endgame(They keep getting better)</p>
+                <p>Captain Marvel kinda sucked tho</p>
+            </div>
+        </div>
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Phase 4</h4>
+                <p>Black Widow was solid</p>
+                <p>Dr Strange looks good</p>
+                <p>Martial arts movie looks cool too</p>
+                <p>I bet those Secret War is next for the avengers</p>
+                <p>For sure</p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+{% endblock content %}

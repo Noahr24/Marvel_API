@@ -1,0 +1,98 @@
+/* Nav styles */
+.ct-nav{
+    display: flex;
+    justify-content: center;
+}
+
+/* Target Main Logo Image */
+.ct-nav img{
+    width: 25%;
+    max-width: 100%;
+    margin-left: 2px;
+}
+
+ul#horizontal-list{
+    min-width: 55vw;
+    list-style: none;
+    padding-top: 2.4vw;
+}
+
+#horizontal-list li, #horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: black;
+} 
+
+#horizontal-list a:nth-last-child(1){
+    border: 2px solid blue;
+    border-radius: 11px;
+    margin-right: .02vw;
+}
+
+/* End of Nav Styles0 */
+
+/* Start of Header/Hero Section */
+#header-text{
+    padding: 2vw;
+}
+
+.header-image{
+    width: 15%;
+    max-width: 100%;
+}
+/* End of Header/Hero Section */
+
+/* Start of Middle Section */
+#middle-text{
+    text-align: center;
+    padding: 13vh;
+}
+
+#middle-text h2{
+    padding: 1.5vw;
+}
+/* End of Middle */
+
+/* Start of Features Section */
+#api-image{
+    width: 30px;
+    height: 30px;
+}
+
+#graphql-image, #database-image{
+    margin-bottom: 10vh;
+    margin: auto;
+    margin-bottom: 10vh;
+    justify-content: center;
+}
+
+#features-section{
+    margin: 8vw;
+}
+/* End of Features */
+
+/* Start of Community */
+#drone-image{
+    width: 50%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
+/* End of community */
+
+/* Start of Footer */
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+}
+
+#footer-logo{
+    width: 100%;
+    max-width: 100%;
+}
+
+#footer{
+    border-top: 3px solid black;
+    margin-top: 20vh;
+}
